@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+div {
+  display: flex;
+  justify-content: space-between; /* logo a sinistra, menu a destra */
+  align-items: center;            /* allinea verticalmente */
+  padding: 10px 20px;             /* opzionale, per respirare */
+}
+ul {
+  display: flex;
+  gap: 20px; /* spazio tra le voci */
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000; 
+}
