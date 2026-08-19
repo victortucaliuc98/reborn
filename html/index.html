@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>JavaScript</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss"></style>
-    <!-- App style  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reborn</title>
+    <!-- App style -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- App Script -->
     <script src="../js/myscript.js" defer></script>
-
-
 </head>
 
 <body>
-    <div>
-        <a href="#"><img class="w-20 h-20 bg-full rounded-full" src="../img/reborn logo.jpeg" alt="logo"></a>
-        <div class="w-full ">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#"> Chi Siamo</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contattaci</a></li>
-                <li><a href="#">English</a></li>
-            </ul>
-        </div>
-    </div>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="../img/reborn_logo-removebg-preview.png" alt="logo">
+    </a>
 
+    <!-- Hamburger button -->
+    <button id="menu-btn" class="hamburger" aria-label="Menu navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
+    <!-- Navigation Menu -->
+    <nav id="menu" class="menu">
+      <a href="#" class="btn-reserve" data-i18n="reserve">Prenota</a>
+      <ul>
+        <li><a data-i18n="home" href="#">Home</a></li>
+        <li><a data-i18n="about" href="#">Chi Siamo</a></li>
+        <li><a data-i18n="shop" href="#">Shop</a></li>
+        <li><a data-i18n="contact" href="#">Contattaci</a></li>
+        <!-- Bottone lingua -->
+        <li><a id="lang-switch" href="#">English</a></li>
+      </ul>
+    </nav>
+  </header>
 </body>
 
 </html>
+
+
+
+
