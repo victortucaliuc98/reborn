@@ -18,7 +18,7 @@ body {
 
 /* Layout generale Header */
 .header {
-  position: relative;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,6 +26,18 @@ body {
   background-color: #111;
   border-bottom: 1px solid #222;
   z-index: 100;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; /* sopra tutto */
+  background: #0f1115; /* colore solido per evitare trasparenze */
+  padding: 15px 20px;
+
+  /* opzionale ma consigliato */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .logo img {
@@ -176,6 +188,7 @@ body {
 
 /* Typography & Main Content */
 main {
+  padding-top: 120px; /* regola in base all’altezza del tuo header */
   position: relative;
   padding: 0px, 25px;
   max-width: 900px;
@@ -452,16 +465,10 @@ section.first_section{
     transform: translateY(-8px);
     box-shadow: 0 0 20px rgba(212, 55, 55, 0.25); /* glow oro */
 }
-/* Responsive: 1 colonna su mobile */
-@media (max-width: 768px) {
-    .services-grid,
-    .howItWorks-grid {
-        grid-template-columns: 1fr;
-        padding: 0 20px; /* margine laterale */
-    }
-}
+
 /* --- SEZIONE GENERALE --- */
 .pricing {
+  display: grid;
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -550,11 +557,10 @@ section.first_section{
 
 /* --- BOTTONI --- */
 .btn {
-  background: #f0d27a;
-  color: #111;
+  background: rgba(0, 0, 0, 0.2);
+  color: red;
   padding: 11px 18px;
   border: none;
-  border-radius: 999px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -564,10 +570,26 @@ section.first_section{
 }
 
 .btn:hover {
+  background-color: rgba(255,0,0,0.2);
+  transform: translateY(-1px);
+}
+.btn_prm {
+  background: #f0d27a;
+  color: #111;
+  padding: 11px 18px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: background .2s ease, transform .1s ease;
+}
+
+.btn_prm:hover {
   background: #ffe28f;
   transform: translateY(-1px);
 }
-
 /* --- COLORI SPECIFICI PER CARD --- */
 .card-essential {
   border-top: 4px solid #ff4b4b;   /* rosso acceso */
@@ -578,5 +600,24 @@ section.first_section{
 }
 
 .card-reborn {
-  border-top: 4px solid #4bb8ff;   /* azzurro premium */
+  border-top: 4px solid #ff4b4b;   /* azzurro premium */
+}
+.card .btn,
+.card .btn_prm {
+  display: block;      /* diventa un blocco */
+  width: 100%;         /* occupa tutta la card */
+  text-align: center;  /* centra il testo */
+  margin-top: 15px;    /* spazio sopra */
+  padding: 14px 0;     /* più alto e più bello */
+  
+}
+
+/* Responsive: 1 colonna su mobile */
+@media (max-width: 768px) {
+    .services-grid,
+    .howItWorks-grid,
+    .pricing-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px; /* margine laterale */
+    }
 }

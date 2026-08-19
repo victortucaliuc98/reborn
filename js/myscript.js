@@ -52,7 +52,40 @@ const translations = {
     srv9_text: "Da 1 a 6 ore secondo il pacchetto, senza spostare l'auto.",
 
     srv10_title: "Auto reborn",
-    srv10_text: "Controllo finale insieme a te e consegna con l'auto come nuova."
+    srv10_text: "Controllo finale insieme a te e consegna con l'auto come nuova.",
+
+    pricing_title: "Pacchetti Prezzi",
+
+essential_title: "Essential",
+essential_duration: "Circa 1,5 ore",
+essential_price: "€59",
+essential_f1: "Prelavaggio e lavaggio a mano",
+essential_f2: "Asciugatura in microfibra",
+essential_f3: "Cerchi e gomme",
+essential_f4: "Vetri esterni",
+essential_f5: "Aspirazione rapida interni",
+essential_btn: "Prenota Essential",
+
+premium_title: "Premium",
+premium_badge: "Più scelto",
+premium_duration: "Circa 3,5 ore",
+premium_price: "€129",
+premium_f1: "Tutto il pacchetto Essential",
+premium_f2: "Decontaminazione chimica e clay bar",
+premium_f3: "Igienizzazione completa interni",
+premium_f4: "Trattamento plastiche e pelle",
+premium_f5: "Sealant protettivo 3 mesi",
+
+reborn_title: "Reborn Full",
+reborn_duration: "Circa 6 ore",
+reborn_price: "€289",
+reborn_f1: "Tutto il pacchetto Premium",
+reborn_f2: "Lucidatura correttiva monostep",
+reborn_f3: "Sanificazione ozono abitacolo",
+reborn_f4: "Motore e vani porta",
+reborn_f5: "Protezione cera carnauba premium",
+reborn_btn: "Prenota Reborn Full",
+premium_btn:"Prenota Premium"
 
 
   },
@@ -101,7 +134,40 @@ const translations = {
     srv9_text: "From 1 to 6 hours depending on the package, without moving the car.",
 
     srv10_title: "Auto reborn",
-    srv10_text: "Final check together and delivery with your car looking like new."
+    srv10_text: "Final check together and delivery with your car looking like new.",
+    pricing_title: "Detailing Packages",
+
+essential_title: "Essential",
+essential_duration: "About 1.5 hours",
+essential_price: "€59",
+essential_f1: "Pre-wash and hand wash",
+essential_f2: "Microfiber drying",
+essential_f3: "Wheels and tires",
+essential_f4: "Exterior glass",
+essential_f5: "Quick interior vacuum",
+essential_btn: "Book Essential",
+
+premium_title: "Premium",
+premium_badge: "Most chosen",
+premium_duration: "About 3.5 hours",
+premium_price: "€129",
+premium_f1: "Everything in Essential",
+premium_f2: "Chemical decontamination and clay bar",
+premium_f3: "Full interior sanitization",
+premium_f4: "Plastic and leather treatment",
+premium_f5: "3‑month protective sealant",
+
+reborn_title: "Reborn Full",
+reborn_duration: "About 6 hours",
+reborn_price: "€289",
+reborn_f1: "Everything in Premium",
+reborn_f2: "Single‑step corrective polishing",
+reborn_f3: "Cabin ozone sanitization",
+reborn_f4: "Engine bay and door jambs",
+reborn_f5: "Premium carnauba wax protection",
+reborn_btn: "Book Reborn Full",
+premium_btn:"book Premium",
+
 
 
   }
