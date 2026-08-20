@@ -611,7 +611,9 @@ section.first_section{
   padding: 14px 0;     /* più alto e più bello */
   
 }
-
+P.duration{
+  text-transform: uppercase;
+}
 /* Responsive: 1 colonna su mobile */
 @media (max-width: 768px) {
     .services-grid,
